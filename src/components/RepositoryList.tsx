@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { RepositoryItem } from "./RepositoryItem";
 
-// import map from "../assets/images/map-pin.svg"
-
 import '../styles/repositories.scss';
 
 interface ProfileProps {

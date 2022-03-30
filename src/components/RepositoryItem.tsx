@@ -10,10 +10,10 @@ export function RepositoryItem(props: RepositoryItemProps) {
   return (
     <div className="itens-repository">
       {/* <strong>{props.repository?.name ?? 'Default'}</strong> */}
-      <strong>📂{props.repository?.name}</strong>
+      <strong>📁{props.repository?.name}</strong>
       <p>📝{props.repository?.description ?? props.repository.name}</p>
       <a href={props.repository?.html_url} target="_blank">
-        💾 Acessar repositório
+        🏁  Acessar repositório
       </a>
     </div>
   )
