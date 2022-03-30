@@ -1,7 +1,9 @@
+import { useState, useEffect } from "react";
 import { RepositoryItem } from "./RepositoryItem";
 
+// import map from "../assets/images/map-pin.svg"
+
 import '../styles/repositories.scss';
-import { useState, useEffect } from "react";
 
 interface ProfileProps {
   avatar_url: string,
@@ -41,34 +43,40 @@ export function RepositoryList() {
   return (
 
     <>
-      <section className="profile">
-        <div>
-          <img src={profile?.avatar_url} alt="Foto de Perfil" />
-        </div>
+      <div className="page">
+        <aside className="profile">
+          <div className="main-information">
+            <img className="photo-profile" src={profile?.avatar_url} alt="Foto de Perfil" />
+            <h1>{profile?.name}</h1>
+            <p>{profile?.bio}</p>
+          </div>
 
-        <div className="descriptions">
-          <p>{profile?.name}</p>
-          <p>{profile?.bio}</p>
-          <p>{profile?.location}</p>
-          <p>{profile?.company}</p>
+          <div className="descriptions">
+            <a href="https://portalconsultor.netlify.app/" target="_blank">
+              <p>📍 {profile?.location}</p>
+            </a>
+            <p>🏢 {profile?.company}</p>
+            <p>🐱 Jonathas-Bonfim</p>
+            <p>🕊 jonathas.bonfim</p>
+            <p>📩 jonathas@atualsistemas.net</p>
+          </div>
+        </aside>
 
-        </div>
-      </section>
 
+        <section className="repository-list">
+          <h1>Meus Repositórios</h1>
 
-      <section className="repository-list">
-        <h1>Lista de Repositórios</h1>
-
-        <ul>
-          {
-            repositories.map(repository => {
-              return (
-                <RepositoryItem repository={repository} key={repository.name} />
-              )
-            })
-          }
-        </ul>
-      </section>
+          <div className="repository-list">
+            {
+              repositories.map(repository => {
+                return (
+                  <RepositoryItem repository={repository} key={repository.name} />
+                )
+              })
+            }
+          </div>
+        </section>
+      </div>
     </>
 
   )

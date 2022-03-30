@@ -6,9 +6,13 @@
 
 body {
   font: 16px "Helvetica Neue", Arial, sans-serif;
-  color: #121214;
+  color: #fff;
+  background-color: var(--body-bg-color);
+}
 
-  // h1 {
-  //   font-size: 80px;
-  // }
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
 }
