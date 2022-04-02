@@ -1,5 +1,5 @@
 # github-explorer
-Projeto para estruturação e principais conceitos do react. 
+Projeto para estruturação e principais conceitos do react! 
 
 
 
