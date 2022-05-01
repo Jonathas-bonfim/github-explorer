@@ -3,7 +3,7 @@ Projeto para estruturação e principais conceitos do react!
 
 
 
-## 👋👋 Olá, bem vindo ao site NFT.
+## 👋👋 Olá, bem vindo ao site Git Hub Explorer.
 
 #### O projeto enfatiza o consumo de API, repasse de propriedades, componentização, estado e Hooks. A configuração do projeto foi feita de maneira manual para um melhor entendimento do react debaixo dos panos.
  
